@@ -10,9 +10,7 @@ $(document).ready(function() {
      }else {
           // если авторизация прошла только что (от VK.Auth.login(authInfo);), то имя и фамилия уже будут в ответе   
           $('#vk_id').html(response.session.user.first_name+' '+response.session.user.last_name);
-          $('#vk_id').append('
-  user_id: '+response.session.mid);}
-     
+          $('#vk_id').append('user_id: '+response.session.mid);}
          }else {
           VK.Auth.login(authInfo); // опционально можем спалиться и вызвать всплывающее окно авторизации
       }
