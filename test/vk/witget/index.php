@@ -13,5 +13,5 @@ function myload(a1,a2) {
 		a4.parentNode.insertBefore(a5, a4);
 	},1)
 }
-myload('<?=$myid?>','/witget/index1.php');
+myload('<?=$myid?>','witget/index1.php');
 

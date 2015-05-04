@@ -56,7 +56,7 @@ if (!are_cookies_enabled()) {
 	
 }
 
-iframe_url = '/witget/index2.php?host='+location.host+'&id=<?=$myid?>';
+iframe_url = 'witget/index2.php?host='+location.host+'&id=<?=$myid?>';
 
 if( mnoload ) {
 		document.oncontextmenu = new Function("return false;");

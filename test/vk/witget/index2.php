@@ -81,7 +81,7 @@ VK.Observer.subscribe("widgets.like.liked", function f()
 	clearInterval(intervalID);
 	setTimeout('top.postMessage("myhide1", "<?=$mysite?>")', 1);
 	$.ajax({
-		url: '/witget/join1.php',
+		url: 'witget/join1.php',
 		type: 'POST',
 		dataType: 'html',
 		data: {guid: <?=$myguid?>, id: <?=$myid?>},
